@@ -1,0 +1,696 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<catalog xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0.1">
+<service name="HTTP_OPeNDAP" serviceType="Compound" base="">
+<service name="HTTPServer" serviceType="HTTPServer" base="/thredds/fileServer/"/>
+<service name="ncdods" serviceType="OPENDAP" base="/thredds/dodsC/"/>
+</service>
+<dataset name="Met" ID="ks32/Met">
+<metadata inherited="true">
+<serviceName>HTTP_OPeNDAP</serviceName>
+<dataType>GRID</dataType>
+<documentation xlink:href="https://geonetwork.nci.org.au/geonetwork/srv/eng/catalog.search#/metadata/f7075_4625_2374_0846" xlink:title="NCI Catalogue: Metadata, Licence and Readme"/>
+<documentation xlink:href="/thredds/fileServer/ks32/CLEX_Data/PLUMBER2/readme.txt" xlink:title="README"/>
+<documentation type="rights" xlink:href="/thredds/fileServer/ks32/CLEX_Data/PLUMBER2/license.txt" xlink:title="Licence"/>
+</metadata>
+<dataset name="AR-SLu_2010-2010_FLUXNET2015_Met.nc" ID="ks32/Met/AR-SLu_2010-2010_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AR-SLu_2010-2010_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">495.1</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AT-Neu_2002-2012_FLUXNET2015_Met.nc" ID="ks32/Met/AT-Neu_2002-2012_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AT-Neu_2002-2012_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.657</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-ASM_2011-2017_OzFlux_Met.nc" ID="ks32/Met/AU-ASM_2011-2017_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-ASM_2011-2017_OzFlux_Met.nc">
+<dataSize units="Mbytes">3.095</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-Cow_2010-2015_OzFlux_Met.nc" ID="ks32/Met/AU-Cow_2010-2015_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-Cow_2010-2015_OzFlux_Met.nc">
+<dataSize units="Mbytes">2.667</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-Cpr_2011-2017_OzFlux_Met.nc" ID="ks32/Met/AU-Cpr_2011-2017_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-Cpr_2011-2017_OzFlux_Met.nc">
+<dataSize units="Mbytes">3.056</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-Ctr_2010-2017_OzFlux_Met.nc" ID="ks32/Met/AU-Ctr_2010-2017_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-Ctr_2010-2017_OzFlux_Met.nc">
+<dataSize units="Mbytes">3.471</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-Cum_2013-2018_OzFlux_Met.nc" ID="ks32/Met/AU-Cum_2013-2018_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-Cum_2013-2018_OzFlux_Met.nc">
+<dataSize units="Mbytes">2.680</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-DaP_2009-2012_OzFlux_Met.nc" ID="ks32/Met/AU-DaP_2009-2012_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-DaP_2009-2012_OzFlux_Met.nc">
+<dataSize units="Mbytes">1.853</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-DaS_2010-2017_OzFlux_Met.nc" ID="ks32/Met/AU-DaS_2010-2017_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-DaS_2010-2017_OzFlux_Met.nc">
+<dataSize units="Mbytes">3.560</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-Dry_2011-2015_OzFlux_Met.nc" ID="ks32/Met/AU-Dry_2011-2015_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-Dry_2011-2015_OzFlux_Met.nc">
+<dataSize units="Mbytes">2.275</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-Emr_2012-2013_OzFlux_Met.nc" ID="ks32/Met/AU-Emr_2012-2013_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-Emr_2012-2013_OzFlux_Met.nc">
+<dataSize units="Mbytes">1.036</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-GWW_2013-2017_OzFlux_Met.nc" ID="ks32/Met/AU-GWW_2013-2017_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-GWW_2013-2017_OzFlux_Met.nc">
+<dataSize units="Mbytes">2.189</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-Gin_2012-2017_OzFlux_Met.nc" ID="ks32/Met/AU-Gin_2012-2017_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-Gin_2012-2017_OzFlux_Met.nc">
+<dataSize units="Mbytes">2.668</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-How_2003-2017_OzFlux_Met.nc" ID="ks32/Met/AU-How_2003-2017_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-How_2003-2017_OzFlux_Met.nc">
+<dataSize units="Mbytes">6.302</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-Lit_2016-2017_OzFlux_Met.nc" ID="ks32/Met/AU-Lit_2016-2017_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-Lit_2016-2017_OzFlux_Met.nc">
+<dataSize units="Mbytes">1.033</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-Otw_2009-2010_OzFlux_Met.nc" ID="ks32/Met/AU-Otw_2009-2010_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-Otw_2009-2010_OzFlux_Met.nc">
+<dataSize units="Kbytes">590.5</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-Rig_2011-2016_OzFlux_Met.nc" ID="ks32/Met/AU-Rig_2011-2016_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-Rig_2011-2016_OzFlux_Met.nc">
+<dataSize units="Mbytes">2.733</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-Rob_2014-2017_OzFlux_Met.nc" ID="ks32/Met/AU-Rob_2014-2017_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-Rob_2014-2017_OzFlux_Met.nc">
+<dataSize units="Mbytes">1.870</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-Sam_2011-2017_OzFlux_Met.nc" ID="ks32/Met/AU-Sam_2011-2017_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-Sam_2011-2017_OzFlux_Met.nc">
+<dataSize units="Mbytes">2.819</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-Stp_2010-2017_OzFlux_Met.nc" ID="ks32/Met/AU-Stp_2010-2017_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-Stp_2010-2017_OzFlux_Met.nc">
+<dataSize units="Mbytes">3.572</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-TTE_2013-2017_OzFlux_Met.nc" ID="ks32/Met/AU-TTE_2013-2017_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-TTE_2013-2017_OzFlux_Met.nc">
+<dataSize units="Mbytes">2.267</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-Tum_2002-2017_OzFlux_Met.nc" ID="ks32/Met/AU-Tum_2002-2017_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-Tum_2002-2017_OzFlux_Met.nc">
+<dataSize units="Mbytes">3.388</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-Whr_2015-2016_OzFlux_Met.nc" ID="ks32/Met/AU-Whr_2015-2016_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-Whr_2015-2016_OzFlux_Met.nc">
+<dataSize units="Mbytes">1.031</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-Wrr_2016-2017_OzFlux_Met.nc" ID="ks32/Met/AU-Wrr_2016-2017_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-Wrr_2016-2017_OzFlux_Met.nc">
+<dataSize units="Mbytes">1.038</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="AU-Ync_2011-2017_OzFlux_Met.nc" ID="ks32/Met/AU-Ync_2011-2017_OzFlux_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/AU-Ync_2011-2017_OzFlux_Met.nc">
+<dataSize units="Mbytes">3.095</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="BE-Bra_2004-2014_FLUXNET2015_Met.nc" ID="ks32/Met/BE-Bra_2004-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/BE-Bra_2004-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.792</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="BE-Lon_2005-2014_FLUXNET2015_Met.nc" ID="ks32/Met/BE-Lon_2005-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/BE-Lon_2005-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.445</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="BE-Vie_1997-2014_FLUXNET2015_Met.nc" ID="ks32/Met/BE-Vie_1997-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/BE-Vie_1997-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">5.425</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="BR-Sa3_2001-2003_FLUXNET2015_Met.nc" ID="ks32/Met/BR-Sa3_2001-2003_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/BR-Sa3_2001-2003_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.253</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="BW-Ma1_2000-2000_LaThuile_Met.nc" ID="ks32/Met/BW-Ma1_2000-2000_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/BW-Ma1_2000-2000_LaThuile_Met.nc">
+<dataSize units="Kbytes">556.7</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CA-NS1_2003-2003_FLUXNET2015_Met.nc" ID="ks32/Met/CA-NS1_2003-2003_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CA-NS1_2003-2003_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">529.7</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CA-NS2_2002-2004_FLUXNET2015_Met.nc" ID="ks32/Met/CA-NS2_2002-2004_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CA-NS2_2002-2004_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.193</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CA-NS4_2003-2004_FLUXNET2015_Met.nc" ID="ks32/Met/CA-NS4_2003-2004_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CA-NS4_2003-2004_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">864.7</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CA-NS5_2003-2004_FLUXNET2015_Met.nc" ID="ks32/Met/CA-NS5_2003-2004_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CA-NS5_2003-2004_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">866.3</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CA-NS6_2002-2004_FLUXNET2015_Met.nc" ID="ks32/Met/CA-NS6_2002-2004_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CA-NS6_2002-2004_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.206</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CA-NS7_2003-2004_FLUXNET2015_Met.nc" ID="ks32/Met/CA-NS7_2003-2004_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CA-NS7_2003-2004_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">880.5</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CA-Qcu_2002-2006_LaThuile_Met.nc" ID="ks32/Met/CA-Qcu_2002-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CA-Qcu_2002-2006_LaThuile_Met.nc">
+<dataSize units="Mbytes">2.031</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CA-Qfo_2004-2010_FLUXNET2015_Met.nc" ID="ks32/Met/CA-Qfo_2004-2010_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CA-Qfo_2004-2010_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">2.554</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CA-SF1_2004-2006_FLUXNET2015_Met.nc" ID="ks32/Met/CA-SF1_2004-2006_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CA-SF1_2004-2006_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.071</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CA-SF2_2003-2005_FLUXNET2015_Met.nc" ID="ks32/Met/CA-SF2_2003-2005_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CA-SF2_2003-2005_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.098</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CA-SF3_2003-2005_FLUXNET2015_Met.nc" ID="ks32/Met/CA-SF3_2003-2005_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CA-SF3_2003-2005_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.080</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CH-Cha_2006-2014_FLUXNET2015_Met.nc" ID="ks32/Met/CH-Cha_2006-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CH-Cha_2006-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.481</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CH-Dav_1997-2014_FLUXNET2015_Met.nc" ID="ks32/Met/CH-Dav_1997-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CH-Dav_1997-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">6.554</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CH-Fru_2007-2014_FLUXNET2015_Met.nc" ID="ks32/Met/CH-Fru_2007-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CH-Fru_2007-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.089</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CH-Oe1_2002-2008_FLUXNET2015_Met.nc" ID="ks32/Met/CH-Oe1_2002-2008_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CH-Oe1_2002-2008_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">2.710</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CN-Cha_2003-2005_FLUXNET2015_Met.nc" ID="ks32/Met/CN-Cha_2003-2005_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CN-Cha_2003-2005_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.079</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CN-Cng_2008-2009_FLUXNET2015_Met.nc" ID="ks32/Met/CN-Cng_2008-2009_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CN-Cng_2008-2009_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">942.8</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CN-Dan_2004-2005_FLUXNET2015_Met.nc" ID="ks32/Met/CN-Dan_2004-2005_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CN-Dan_2004-2005_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">818.6</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CN-Din_2003-2005_FLUXNET2015_Met.nc" ID="ks32/Met/CN-Din_2003-2005_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CN-Din_2003-2005_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.051</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CN-Du2_2007-2008_FLUXNET2015_Met.nc" ID="ks32/Met/CN-Du2_2007-2008_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CN-Du2_2007-2008_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">923.6</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CN-HaM_2002-2003_FLUXNET2015_Met.nc" ID="ks32/Met/CN-HaM_2002-2003_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CN-HaM_2002-2003_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">901.8</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CN-Qia_2003-2005_FLUXNET2015_Met.nc" ID="ks32/Met/CN-Qia_2003-2005_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CN-Qia_2003-2005_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.091</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="CZ-wet_2007-2014_FLUXNET2015_Met.nc" ID="ks32/Met/CZ-wet_2007-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/CZ-wet_2007-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">2.786</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="DE-Bay_1997-1999_LaThuile_Met.nc" ID="ks32/Met/DE-Bay_1997-1999_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/DE-Bay_1997-1999_LaThuile_Met.nc">
+<dataSize units="Mbytes">1.231</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="DE-Geb_2001-2014_FLUXNET2015_Met.nc" ID="ks32/Met/DE-Geb_2001-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/DE-Geb_2001-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">4.913</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="DE-Gri_2004-2014_FLUXNET2015_Met.nc" ID="ks32/Met/DE-Gri_2004-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/DE-Gri_2004-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">4.080</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="DE-Hai_2000-2012_FLUXNET2015_Met.nc" ID="ks32/Met/DE-Hai_2000-2012_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/DE-Hai_2000-2012_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">4.507</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="DE-Kli_2005-2014_FLUXNET2015_Met.nc" ID="ks32/Met/DE-Kli_2005-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/DE-Kli_2005-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.790</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="DE-Meh_2004-2006_LaThuile_Met.nc" ID="ks32/Met/DE-Meh_2004-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/DE-Meh_2004-2006_LaThuile_Met.nc">
+<dataSize units="Mbytes">1.303</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="DE-Obe_2008-2014_FLUXNET2015_Met.nc" ID="ks32/Met/DE-Obe_2008-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/DE-Obe_2008-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">2.667</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="DE-Seh_2008-2010_FLUXNET2015_Met.nc" ID="ks32/Met/DE-Seh_2008-2010_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/DE-Seh_2008-2010_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.262</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="DE-SfN_2013-2014_FLUXNET2015_Met.nc" ID="ks32/Met/DE-SfN_2013-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/DE-SfN_2013-2014_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">930.6</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="DE-Tha_1998-2014_FLUXNET2015_Met.nc" ID="ks32/Met/DE-Tha_1998-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/DE-Tha_1998-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">6.055</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="DE-Wet_2002-2006_LaThuile_Met.nc" ID="ks32/Met/DE-Wet_2002-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/DE-Wet_2002-2006_LaThuile_Met.nc">
+<dataSize units="Mbytes">1.977</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="DK-Fou_2005-2005_FLUXNET2015_Met.nc" ID="ks32/Met/DK-Fou_2005-2005_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/DK-Fou_2005-2005_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">537.2</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="DK-Lva_2005-2006_LaThuile_Met.nc" ID="ks32/Met/DK-Lva_2005-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/DK-Lva_2005-2006_LaThuile_Met.nc">
+<dataSize units="Kbytes">965.1</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="DK-Ris_2004-2005_LaThuile_Met.nc" ID="ks32/Met/DK-Ris_2004-2005_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/DK-Ris_2004-2005_LaThuile_Met.nc">
+<dataSize units="Kbytes">877.5</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="DK-Sor_1997-2014_FLUXNET2015_Met.nc" ID="ks32/Met/DK-Sor_1997-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/DK-Sor_1997-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">5.197</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="DK-ZaH_2000-2013_FLUXNET2015_Met.nc" ID="ks32/Met/DK-ZaH_2000-2013_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/DK-ZaH_2000-2013_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.824</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="ES-ES1_1999-2006_LaThuile_Met.nc" ID="ks32/Met/ES-ES1_1999-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/ES-ES1_1999-2006_LaThuile_Met.nc">
+<dataSize units="Mbytes">2.975</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="ES-ES2_2005-2006_LaThuile_Met.nc" ID="ks32/Met/ES-ES2_2005-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/ES-ES2_2005-2006_LaThuile_Met.nc">
+<dataSize units="Kbytes">856.2</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="ES-LMa_2004-2006_LaThuile_Met.nc" ID="ks32/Met/ES-LMa_2004-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/ES-LMa_2004-2006_LaThuile_Met.nc">
+<dataSize units="Mbytes">1.289</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="ES-LgS_2007-2007_FLUXNET2015_Met.nc" ID="ks32/Met/ES-LgS_2007-2007_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/ES-LgS_2007-2007_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">531.0</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="ES-VDA_2004-2004_LaThuile_Met.nc" ID="ks32/Met/ES-VDA_2004-2004_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/ES-VDA_2004-2004_LaThuile_Met.nc">
+<dataSize units="Kbytes">552.7</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="FI-Hyy_1996-2014_FLUXNET2015_Met.nc" ID="ks32/Met/FI-Hyy_1996-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/FI-Hyy_1996-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">6.685</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="FI-Kaa_2000-2002_LaThuile_Met.nc" ID="ks32/Met/FI-Kaa_2000-2002_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/FI-Kaa_2000-2002_LaThuile_Met.nc">
+<dataSize units="Mbytes">1.232</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="FI-Lom_2007-2009_FLUXNET2015_Met.nc" ID="ks32/Met/FI-Lom_2007-2009_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/FI-Lom_2007-2009_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.286</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="FI-Sod_2008-2014_FLUXNET2015_Met.nc" ID="ks32/Met/FI-Sod_2008-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/FI-Sod_2008-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">2.130</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="FR-Fon_2005-2013_FLUXNET2015_Met.nc" ID="ks32/Met/FR-Fon_2005-2013_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/FR-Fon_2005-2013_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.031</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="FR-Gri_2005-2013_FLUXNET2015_Met.nc" ID="ks32/Met/FR-Gri_2005-2013_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/FR-Gri_2005-2013_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.149</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="FR-Hes_1997-2006_LaThuile_Met.nc" ID="ks32/Met/FR-Hes_1997-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/FR-Hes_1997-2006_LaThuile_Met.nc">
+<dataSize units="Mbytes">3.837</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="FR-LBr_2003-2008_FLUXNET2015_Met.nc" ID="ks32/Met/FR-LBr_2003-2008_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/FR-LBr_2003-2008_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">2.174</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="FR-Lq1_2004-2006_LaThuile_Met.nc" ID="ks32/Met/FR-Lq1_2004-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/FR-Lq1_2004-2006_LaThuile_Met.nc">
+<dataSize units="Mbytes">1.303</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="FR-Lq2_2004-2006_LaThuile_Met.nc" ID="ks32/Met/FR-Lq2_2004-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/FR-Lq2_2004-2006_LaThuile_Met.nc">
+<dataSize units="Mbytes">1.302</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="FR-Pue_2000-2014_FLUXNET2015_Met.nc" ID="ks32/Met/FR-Pue_2000-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/FR-Pue_2000-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">5.295</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="GF-Guy_2004-2014_FLUXNET2015_Met.nc" ID="ks32/Met/GF-Guy_2004-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/GF-Guy_2004-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.355</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="HU-Bug_2003-2006_LaThuile_Met.nc" ID="ks32/Met/HU-Bug_2003-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/HU-Bug_2003-2006_LaThuile_Met.nc">
+<dataSize units="Mbytes">1.619</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="ID-Pag_2002-2003_LaThuile_Met.nc" ID="ks32/Met/ID-Pag_2002-2003_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/ID-Pag_2002-2003_LaThuile_Met.nc">
+<dataSize units="Kbytes">875.2</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IE-Ca1_2004-2006_LaThuile_Met.nc" ID="ks32/Met/IE-Ca1_2004-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IE-Ca1_2004-2006_LaThuile_Met.nc">
+<dataSize units="Mbytes">1.225</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IE-Dri_2003-2005_LaThuile_Met.nc" ID="ks32/Met/IE-Dri_2003-2005_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IE-Dri_2003-2005_LaThuile_Met.nc">
+<dataSize units="Mbytes">1.386</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IT-Amp_2003-2006_LaThuile_Met.nc" ID="ks32/Met/IT-Amp_2003-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IT-Amp_2003-2006_LaThuile_Met.nc">
+<dataSize units="Mbytes">1.783</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IT-BCi_2005-2010_FLUXNET2015_Met.nc" ID="ks32/Met/IT-BCi_2005-2010_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IT-BCi_2005-2010_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">2.180</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IT-CA1_2012-2013_FLUXNET2015_Met.nc" ID="ks32/Met/IT-CA1_2012-2013_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IT-CA1_2012-2013_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">924.6</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IT-CA2_2012-2013_FLUXNET2015_Met.nc" ID="ks32/Met/IT-CA2_2012-2013_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IT-CA2_2012-2013_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">928.0</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IT-CA3_2012-2013_FLUXNET2015_Met.nc" ID="ks32/Met/IT-CA3_2012-2013_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IT-CA3_2012-2013_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">971.6</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IT-Col_2007-2014_FLUXNET2015_Met.nc" ID="ks32/Met/IT-Col_2007-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IT-Col_2007-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.091</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IT-Cpz_2001-2008_FLUXNET2015_Met.nc" ID="ks32/Met/IT-Cpz_2001-2008_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IT-Cpz_2001-2008_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">2.778</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IT-Isp_2013-2014_FLUXNET2015_Met.nc" ID="ks32/Met/IT-Isp_2013-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IT-Isp_2013-2014_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">894.0</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IT-LMa_2003-2004_LaThuile_Met.nc" ID="ks32/Met/IT-LMa_2003-2004_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IT-LMa_2003-2004_LaThuile_Met.nc">
+<dataSize units="Kbytes">963.8</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IT-Lav_2005-2014_FLUXNET2015_Met.nc" ID="ks32/Met/IT-Lav_2005-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IT-Lav_2005-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.963</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IT-MBo_2003-2012_FLUXNET2015_Met.nc" ID="ks32/Met/IT-MBo_2003-2012_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IT-MBo_2003-2012_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">4.022</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IT-Mal_2003-2003_LaThuile_Met.nc" ID="ks32/Met/IT-Mal_2003-2003_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IT-Mal_2003-2003_LaThuile_Met.nc">
+<dataSize units="Kbytes">577.9</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IT-Noe_2004-2014_FLUXNET2015_Met.nc" ID="ks32/Met/IT-Noe_2004-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IT-Noe_2004-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.987</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IT-Non_2002-2002_LaThuile_Met.nc" ID="ks32/Met/IT-Non_2002-2002_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IT-Non_2002-2002_LaThuile_Met.nc">
+<dataSize units="Kbytes">526.3</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IT-PT1_2003-2004_FLUXNET2015_Met.nc" ID="ks32/Met/IT-PT1_2003-2004_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IT-PT1_2003-2004_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">873.2</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IT-Ren_2010-2013_FLUXNET2015_Met.nc" ID="ks32/Met/IT-Ren_2010-2013_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IT-Ren_2010-2013_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.650</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IT-Ro1_2002-2006_FLUXNET2015_Met.nc" ID="ks32/Met/IT-Ro1_2002-2006_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IT-Ro1_2002-2006_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.779</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IT-Ro2_2002-2008_FLUXNET2015_Met.nc" ID="ks32/Met/IT-Ro2_2002-2008_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IT-Ro2_2002-2008_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">2.450</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IT-SR2_2013-2014_FLUXNET2015_Met.nc" ID="ks32/Met/IT-SR2_2013-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IT-SR2_2013-2014_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">930.5</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="IT-SRo_2003-2012_FLUXNET2015_Met.nc" ID="ks32/Met/IT-SRo_2003-2012_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/IT-SRo_2003-2012_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.684</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="JP-SMF_2003-2006_FLUXNET2015_Met.nc" ID="ks32/Met/JP-SMF_2003-2006_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/JP-SMF_2003-2006_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.606</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="NL-Ca1_2003-2006_LaThuile_Met.nc" ID="ks32/Met/NL-Ca1_2003-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/NL-Ca1_2003-2006_LaThuile_Met.nc">
+<dataSize units="Mbytes">1.747</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="NL-Hor_2008-2011_FLUXNET2015_Met.nc" ID="ks32/Met/NL-Hor_2008-2011_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/NL-Hor_2008-2011_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.648</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="NL-Loo_1997-2013_FLUXNET2015_Met.nc" ID="ks32/Met/NL-Loo_1997-2013_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/NL-Loo_1997-2013_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">5.646</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="PL-wet_2004-2005_LaThuile_Met.nc" ID="ks32/Met/PL-wet_2004-2005_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/PL-wet_2004-2005_LaThuile_Met.nc">
+<dataSize units="Kbytes">770.8</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="PT-Esp_2002-2004_LaThuile_Met.nc" ID="ks32/Met/PT-Esp_2002-2004_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/PT-Esp_2002-2004_LaThuile_Met.nc">
+<dataSize units="Mbytes">1.319</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="PT-Mi1_2005-2005_LaThuile_Met.nc" ID="ks32/Met/PT-Mi1_2005-2005_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/PT-Mi1_2005-2005_LaThuile_Met.nc">
+<dataSize units="Kbytes">583.1</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="PT-Mi2_2005-2006_LaThuile_Met.nc" ID="ks32/Met/PT-Mi2_2005-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/PT-Mi2_2005-2006_LaThuile_Met.nc">
+<dataSize units="Mbytes">1.035</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="RU-Che_2003-2004_FLUXNET2015_Met.nc" ID="ks32/Met/RU-Che_2003-2004_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/RU-Che_2003-2004_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">845.6</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="RU-Fyo_2003-2014_FLUXNET2015_Met.nc" ID="ks32/Met/RU-Fyo_2003-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/RU-Fyo_2003-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">4.587</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="RU-Zot_2003-2003_LaThuile_Met.nc" ID="ks32/Met/RU-Zot_2003-2003_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/RU-Zot_2003-2003_LaThuile_Met.nc">
+<dataSize units="Kbytes">486.0</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="SD-Dem_2005-2009_FLUXNET2015_Met.nc" ID="ks32/Met/SD-Dem_2005-2009_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/SD-Dem_2005-2009_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.590</dataSize>
+<date type="modified">2020-12-22T02:21:35Z</date>
+</dataset>
+<dataset name="SE-Deg_2002-2005_LaThuile_Met.nc" ID="ks32/Met/SE-Deg_2002-2005_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/SE-Deg_2002-2005_LaThuile_Met.nc">
+<dataSize units="Mbytes">1.765</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="UK-Gri_2000-2001_LaThuile_Met.nc" ID="ks32/Met/UK-Gri_2000-2001_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/UK-Gri_2000-2001_LaThuile_Met.nc">
+<dataSize units="Kbytes">998.8</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="UK-Ham_2004-2004_LaThuile_Met.nc" ID="ks32/Met/UK-Ham_2004-2004_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/UK-Ham_2004-2004_LaThuile_Met.nc">
+<dataSize units="Kbytes">503.0</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="UK-PL3_2005-2006_LaThuile_Met.nc" ID="ks32/Met/UK-PL3_2005-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/UK-PL3_2005-2006_LaThuile_Met.nc">
+<dataSize units="Kbytes">851.7</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-AR1_2010-2012_FLUXNET2015_Met.nc" ID="ks32/Met/US-AR1_2010-2012_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-AR1_2010-2012_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.291</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-AR2_2010-2011_FLUXNET2015_Met.nc" ID="ks32/Met/US-AR2_2010-2011_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-AR2_2010-2011_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">917.1</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-ARM_2003-2012_FLUXNET2015_Met.nc" ID="ks32/Met/US-ARM_2003-2012_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-ARM_2003-2012_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.690</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Aud_2003-2005_LaThuile_Met.nc" ID="ks32/Met/US-Aud_2003-2005_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Aud_2003-2005_LaThuile_Met.nc">
+<dataSize units="Mbytes">1.047</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Bar_2005-2005_LaThuile_Met.nc" ID="ks32/Met/US-Bar_2005-2005_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Bar_2005-2005_LaThuile_Met.nc">
+<dataSize units="Kbytes">571.4</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Bkg_2005-2006_LaThuile_Met.nc" ID="ks32/Met/US-Bkg_2005-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Bkg_2005-2006_LaThuile_Met.nc">
+<dataSize units="Kbytes">729.1</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Blo_2000-2006_FLUXNET2015_Met.nc" ID="ks32/Met/US-Blo_2000-2006_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Blo_2000-2006_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">2.665</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Bo1_1997-2006_LaThuile_Met.nc" ID="ks32/Met/US-Bo1_1997-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Bo1_1997-2006_LaThuile_Met.nc">
+<dataSize units="Mbytes">2.833</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Cop_2002-2003_FLUXNET2015_Met.nc" ID="ks32/Met/US-Cop_2002-2003_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Cop_2002-2003_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">509.3</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-FPe_2000-2006_LaThuile_Met.nc" ID="ks32/Met/US-FPe_2000-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-FPe_2000-2006_LaThuile_Met.nc">
+<dataSize units="Mbytes">2.198</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-GLE_2009-2014_FLUXNET2015_Met.nc" ID="ks32/Met/US-GLE_2009-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-GLE_2009-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">2.435</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Goo_2004-2006_LaThuile_Met.nc" ID="ks32/Met/US-Goo_2004-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Goo_2004-2006_LaThuile_Met.nc">
+<dataSize units="Kbytes">974.8</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Ha1_1992-2012_FLUXNET2015_Met.nc" ID="ks32/Met/US-Ha1_1992-2012_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Ha1_1992-2012_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.464</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Ho1_1996-2004_LaThuile_Met.nc" ID="ks32/Met/US-Ho1_1996-2004_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Ho1_1996-2004_LaThuile_Met.nc">
+<dataSize units="Mbytes">3.655</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-KS2_2003-2006_FLUXNET2015_Met.nc" ID="ks32/Met/US-KS2_2003-2006_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-KS2_2003-2006_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.471</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Los_2000-2008_FLUXNET2015_Met.nc" ID="ks32/Met/US-Los_2000-2008_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Los_2000-2008_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.121</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-MMS_1999-2014_FLUXNET2015_Met.nc" ID="ks32/Met/US-MMS_1999-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-MMS_1999-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.119</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-MOz_2005-2006_LaThuile_Met.nc" ID="ks32/Met/US-MOz_2005-2006_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-MOz_2005-2006_LaThuile_Met.nc">
+<dataSize units="Kbytes">787.3</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Me2_2002-2014_FLUXNET2015_Met.nc" ID="ks32/Met/US-Me2_2002-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Me2_2002-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">4.343</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Me4_1996-2000_LaThuile_Met.nc" ID="ks32/Met/US-Me4_1996-2000_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Me4_1996-2000_LaThuile_Met.nc">
+<dataSize units="Mbytes">2.104</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Me6_2011-2014_FLUXNET2015_Met.nc" ID="ks32/Met/US-Me6_2011-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Me6_2011-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.632</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Myb_2011-2014_FLUXNET2015_Met.nc" ID="ks32/Met/US-Myb_2011-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Myb_2011-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.460</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-NR1_1999-2014_FLUXNET2015_Met.nc" ID="ks32/Met/US-NR1_1999-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-NR1_1999-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">5.379</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Ne1_2002-2012_FLUXNET2015_Met.nc" ID="ks32/Met/US-Ne1_2002-2012_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Ne1_2002-2012_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.884</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Ne2_2002-2012_FLUXNET2015_Met.nc" ID="ks32/Met/US-Ne2_2002-2012_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Ne2_2002-2012_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.875</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Ne3_2002-2012_FLUXNET2015_Met.nc" ID="ks32/Met/US-Ne3_2002-2012_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Ne3_2002-2012_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.838</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-PFa_1995-2014_FLUXNET2015_Met.nc" ID="ks32/Met/US-PFa_1995-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-PFa_1995-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.552</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Prr_2011-2013_FLUXNET2015_Met.nc" ID="ks32/Met/US-Prr_2011-2013_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Prr_2011-2013_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.241</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-SP1_2005-2005_LaThuile_Met.nc" ID="ks32/Met/US-SP1_2005-2005_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-SP1_2005-2005_LaThuile_Met.nc">
+<dataSize units="Kbytes">500.0</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-SP2_2000-2004_LaThuile_Met.nc" ID="ks32/Met/US-SP2_2000-2004_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-SP2_2000-2004_LaThuile_Met.nc">
+<dataSize units="Mbytes">1.719</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-SP3_1999-2004_LaThuile_Met.nc" ID="ks32/Met/US-SP3_1999-2004_LaThuile_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-SP3_1999-2004_LaThuile_Met.nc">
+<dataSize units="Mbytes">1.981</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-SRG_2009-2014_FLUXNET2015_Met.nc" ID="ks32/Met/US-SRG_2009-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-SRG_2009-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">2.409</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-SRM_2004-2014_FLUXNET2015_Met.nc" ID="ks32/Met/US-SRM_2004-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-SRM_2004-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">4.030</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Syv_2002-2008_FLUXNET2015_Met.nc" ID="ks32/Met/US-Syv_2002-2008_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Syv_2002-2008_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">2.519</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Ton_2001-2014_FLUXNET2015_Met.nc" ID="ks32/Met/US-Ton_2001-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Ton_2001-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">4.546</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Tw4_2014-2014_FLUXNET2015_Met.nc" ID="ks32/Met/US-Tw4_2014-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Tw4_2014-2014_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">556.3</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Twt_2010-2014_FLUXNET2015_Met.nc" ID="ks32/Met/US-Twt_2010-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Twt_2010-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.869</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-UMB_2000-2014_FLUXNET2015_Met.nc" ID="ks32/Met/US-UMB_2000-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-UMB_2000-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">2.992</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Var_2001-2014_FLUXNET2015_Met.nc" ID="ks32/Met/US-Var_2001-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Var_2001-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">5.125</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-WCr_1999-2006_FLUXNET2015_Met.nc" ID="ks32/Met/US-WCr_1999-2006_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-WCr_1999-2006_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.132</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Whs_2008-2014_FLUXNET2015_Met.nc" ID="ks32/Met/US-Whs_2008-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Whs_2008-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">2.608</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="US-Wkg_2005-2014_FLUXNET2015_Met.nc" ID="ks32/Met/US-Wkg_2005-2014_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/US-Wkg_2005-2014_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">3.724</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="ZA-Kru_2000-2002_FLUXNET2015_Met.nc" ID="ks32/Met/ZA-Kru_2000-2002_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/ZA-Kru_2000-2002_FLUXNET2015_Met.nc">
+<dataSize units="Mbytes">1.184</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+<dataset name="ZM-Mon_2008-2008_FLUXNET2015_Met.nc" ID="ks32/Met/ZM-Mon_2008-2008_FLUXNET2015_Met.nc" urlPath="ks32/CLEX_Data/PLUMBER2/v1-0/Met/ZM-Mon_2008-2008_FLUXNET2015_Met.nc">
+<dataSize units="Kbytes">571.1</dataSize>
+<date type="modified">2020-12-22T02:21:36Z</date>
+</dataset>
+</dataset>
+</catalog>
