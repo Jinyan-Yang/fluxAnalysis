@@ -4,8 +4,7 @@ met.fn.vec <- list.files('download/flux_anna/',full.names = T)
 
 siteVpdHigh.fn <- c()
 
-for (i in 1:2#seq_along(met.fn.vec)
-     ) {
+for (i in seq_along(met.fn.vec)) {
   nc.tmp <- nc_open(met.fn.vec[i])
   vpd.vec <- ncvar_get(nc.tmp,'VPD')
   
@@ -18,4 +17,9 @@ for (i in 1:2#seq_along(met.fn.vec)
   }
   
 }
-
+siteVpdHigh.fn <- siteVpdHigh.fn[!is.na(siteVpdHigh.fn)]
+# 
+file.copy(from = siteVpdHigh.fn,
+          to = gsub(pattern = 'download/flux_anna/',
+                    replacement = 'download/flux_anna/selected/',
+                    siteVpdHigh.fn))
