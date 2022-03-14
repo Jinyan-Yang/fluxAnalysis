@@ -1,4 +1,23 @@
 library(ncdf4)
+library(quantreg)
+# C
+t_col <- function(color, percent = 50, name = NULL) {
+  #      color = color name
+  #    percent = % transparency
+  #       name = an optional name for the color
+  
+  ## Get RGB values for named color
+  rgb.val <- col2rgb(color)
+  
+  ## Make new color using input color as base and alpha set by transparency
+  t.col <- rgb(rgb.val[1], rgb.val[2], rgb.val[3],
+               max = 255,
+               alpha = (100 - percent) * 255 / 100,
+               names = name)
+  
+  ## Save the color
+  invisible(t.col)
+}
 # read flies
 file.met.vec <- list.files(path = 'download/flux_anna/selected/',
                            full.names = T,pattern = 'Met.nc')
@@ -85,13 +104,47 @@ for(i in seq_along(file.met.vec)){
   hiD.period.ls[[i]] <- met.flux.df
   
 }
+
+# ####
+fn.vec <- list.files(path = 'cache/',pattern = 'flux.met.rds',full.names = T)
+hiD.period.ls <- list()
+for(i in seq_along(fn.vec)){
+  hiD.period.ls[[i]] <- readRDS(fn.vec[[i]])
+}
 #############
 hiD.df <- do.call(rbind,hiD.period.ls)
 #############
-tmp.df <- hiD.period.ls[[5]]
-tmp.df <- tmp.df[tmp.df$Rnet> 10,]
-plot(c(Qle/Rnet)~vpd_kPa,data = tmp.df,ylim=c(0,1))
+pdf('tranFrac.pdf',width = 10,height = 10)
+for (i in seq_along(hiD.period.ls)){
+  tmp.df <- hiD.period.ls[[i]]
+  tmp.df <- tmp.df[tmp.df$Rnet> 
+                     quantile(tmp.df$Rnet,probs = 0.8,na.rm=T)[[1]] &
+                     tmp.df$vpd_kPa>3,]
+  tmp.df$e.frac <- tmp.df$Qle / tmp.df$Rnet
 
+  # 
+  par(mfrow=c(2,2))
+  plot(e.frac~vpd_kPa,data = tmp.df,ylim=c(0,1),pch=16,col='grey',cex=0.5)
+  abline(rq(e.frac~vpd_kPa,data = tmp.df,tau = 0.9), col = "blue", lty = 2)
+  legend('topright',legend = paste0(unique(tmp.df$Site),'_',
+                                    gsub(' ','',substr(unique(tmp.df$veg_type),1,9))),
+         bty='n')
+  # 
+  plot(Qle~vpd_kPa,data = tmp.df,pch=16,col='grey',cex=0.5)
+  abline(rq(Qle~vpd_kPa,data = tmp.df,tau = 0.9), col = "blue", lty = 2)
+  
+  # 
+  hist(tmp.df$LAI,main = '',freq = F,col='coral',xlab='LAI',border = NA)
+  try(hist(tmp.df$LAI[tmp.df$past.30.rain.mm>10],freq = F,add=T,col = t_col('navy'),border = NA))
+  legend('topleft',legend = c('ALL','Past month rainfall>10mm'),
+         pch=15,col=c('coral','navy'),bty='n')
+  # 
+  hist(tmp.df$Qle,main = '',freq = F,col='coral',xlab='LE',border = NA)
+  try(hist(tmp.df$Qle[tmp.df$past.30.rain.mm>10],freq = F,add=T,col = t_col('navy'),border = NA))
+}
+
+
+dev.off()
 # x <- tmp.df$Rnet
 # y <- with(tmp.df,c(Qle/Rnet))
 # z <- kde2d(x, y, n = 50)
@@ -101,8 +154,6 @@ plot(c(Qle/Rnet)~vpd_kPa,data = tmp.df,ylim=c(0,1))
 plot(Qle~vpd_kPa,data = tmp.df)
 plot(Qh~vpd_kPa,data = hiD.period.ls[[1]])
 plot(c(Qle/Rnet)~vpd_kPa,data = tmp.df,ylim=c(0,1))
-
-
 
 names(nc.met$var)
 names(nc.flux$var)
