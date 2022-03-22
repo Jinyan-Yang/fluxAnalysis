@@ -10,9 +10,9 @@ for (i in seq_along(met.fn.vec)) {
   if(class(nc.tmp)!='try-error'){
     vpd.vec <- ncvar_get(nc.tmp,'VPD')
     if(max(vpd.vec,na.rm=T)>10){
-      vpd.high <- vpd.vec[vpd.vec>30]
+      vpd.high <- vpd.vec[vpd.vec>25]
     }else{
-      vpd.high <- vpd.vec[vpd.vec>3]
+      vpd.high <- vpd.vec[vpd.vec>2.5]
     }
     
     
@@ -22,10 +22,7 @@ for (i in seq_along(met.fn.vec)) {
       siteVpdHigh.fn[i] <- NA
     }
   }
-  
-  
 
-  
 }
 siteVpdHigh.fn <- siteVpdHigh.fn[!is.na(siteVpdHigh.fn)]
 # 
