@@ -50,8 +50,8 @@ for (i in seq_along(hiD.period.ls)){
   
   # make plot
   fn.tif <- sprintf('figures/site/%s.tif',paste0(out.ls[[i]]$site,'_', out.ls[[i]]$pft))
-  tiff(fn.tif,width = 500,height = 500*2*.618)
-  par(mar=c(5,5,1,1),mfrow=c(2,1),cex=1)
+  tiff(fn.tif,width = 500*2,height = 500*2*.618)
+  par(mar=c(5,5,1,1),mfrow=c(2,2),cex=1.2)
   # palette()
   
   plot(nl.fit,xlab='VPD (kPa)',ylab='Relative LE',linecol ='red',linelwd =4,pointcol ='grey',cicol = t_col("red", 70))
@@ -66,6 +66,17 @@ for (i in seq_along(hiD.period.ls)){
        pch=16,col='grey')
   legend('topleft',legend = sprintf('(%s)','b'),bty='n')
   # abline(rq(Qle~vpd_kPa,data = tmp.df,tau = 0.9), col = "black", lty = 2)
+  
+  # plot hist
+  hist(tmp.df$LAI[tmp.df$rained == 1],main = '',freq = F,col = t_col('navy'),xlab='LAI',border = NA,xlim=c(0,4))
+  hist(tmp.df$LAI[tmp.df$rained == 0],freq = F,add=T,border = NA,col=t_col('coral'))
+  legend('topright',legend = c('Dry','Wet'),
+         pch=15,col=c('coral','navy'),bty='n')
+  legend('topleft',legend = sprintf('(%s)','c'),bty='n')
+  # 
+  hist(tmp.df$Qle[tmp.df$rained == 1],main = '',freq = F,col = t_col('navy'),xlab=expression('Latent heat flux'~(W~m^-2)),border = NA)
+  hist(tmp.df$Qle[tmp.df$rained == 0],freq = F,add=T,col=t_col('coral'),border = NA)
+  legend('topleft',legend = sprintf('(%s)','d'),bty='n')
   dev.off()
 }
 saveRDS(out.ls,'cache/fit.out.rds')
