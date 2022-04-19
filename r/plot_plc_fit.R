@@ -92,6 +92,57 @@ dev.off()
 nrow(sig.df[sig.df$p80.fit <10,]) / nrow(sig.df)
 nrow(sig.df[sig.df$p80.fit <10,])/71
 
+
+# plot vpd80 and tmax###################
+palette(col.df$iris[c(2,4,5,1,3)])
+tiff('figures/vpd80_tmax.tif',width = 500,height = 500*3*.618)
+par(mar=c(5,5,1,1),mfrow=c(3,1),cex=1)
+high.d.df <- sig.df[sig.df$p80.fit <10,]
+# a
+pch.vec <- c(1,16)
+plot(p80.fit~tmax,data = high.d.df,col=round(pft.num),pch=16,#pch.vec[in.range],
+     ylim=c(2,10),
+     xlab=expression(VPD[max]~(kPa)),ylab=expression(VPD[80]~(kPa),xlim=c(32,52)))
+arrows(x0 = high.d.df$vpd.obs.max, y0 = high.d.df$p80.fit.025,
+       x1 = high.d.df$vpd.obs.max, y1=high.d.df$p80.fit.975,
+       length=0.01, angle=90, code=3,col=round(high.d.df$pft.num),lty='solid')
+legend('topleft',legend = '(a)',bty='n')
+legend('bottomleft',legend = levels(high.d.df$pft.name),col=palette(),bty='n',horiz = F,pch=16,ncol=3)
+
+# 
+df.sub <- high.d.df[high.d.df$pft.name != 'savana' &
+                            high.d.df$pft.name!= 'croplands',]
+# b
+plot(p80.fit~tmax,data = df.sub,
+     col=round(pft.num),pch=16,#pch.vec[in.range],
+     ylim=c(2,10),xlim=c(32,52),
+     xlab=expression(T[max]~(degree*C)),ylab=expression(VPD[80]~(kPa)),cex=2)
+
+lm.fit <- lm(p80.fit~tmax ,data = df.sub)
+
+abline(lm.fit, col='grey',lwd=3,lty='dashed' )
+legend('topleft',legend = '(b)',bty='n')
+
+mylabel = bquote(italic(R)^2 == .(format(summary(lm.fit)$r.squared, digits = 3)))
+text(x = 45, y = 8, labels = mylabel)
+# c
+df.sub <- high.d.df[high.d.df$pft.name == 'savana' | 
+                            high.d.df$pft.name== 'croplands',]
+plot(p80.fit~tmax,data = df.sub,
+     col=round(pft.num),pch=16,#pch.vec[in.range],
+     ylim=c(2,10),xlim=c(32,52),
+     xlab=expression(VPD[max]~(kPa)),ylab=expression(VPD[80]~(kPa)),cex=2)
+
+lm.fit <- lm(p80.fit~tmax ,data = df.sub)
+
+abline(lm.fit, col='grey',lwd=3,lty='dashed' )
+legend('topleft',legend = '(c)',bty='n')
+
+mylabel = bquote(italic(R)^2 == .(format(summary(lm.fit)$r.squared, digits = 3)))
+text(x = 48, y = 6, labels = mylabel)
+
+dev.off()
+
 # abline(lm(p80.fit~vpd.obs.max,data =high.d.df),col='grey',lwd=2)
 
 # summary(lm(p80.fit~vpd.obs.max ,data = high.d.df))

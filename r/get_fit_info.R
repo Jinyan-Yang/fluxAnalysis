@@ -62,9 +62,27 @@ site.info.df$in.range[site.info.df$p80.fit>= site.info.df$vpd.obs.max] <- 1
 # 
 sig.df <- site.info.df[site.info.df$slope.significant == 1 & site.info.df$p80.fit > 2,]
 
-# nrow(site.info.df[site.info.df$slope.significant == 1 & 
+# get tmax
+hiD.period.ls <- readRDS('cache/processed.flx.met.data.rds')
+t.ls <- list()
+for (i in seq_along(hiD.period.ls)){
+  tmp.df <- hiD.period.ls[[i]]
+  t.ls[[i]] <- data.frame(site = unique(tmp.df$Site)[!is.na(unique(tmp.df$Site))],
+                          # pft = pft.nm[!is.na(pft.nm)],
+                          lat = unique(tmp.df$lat),
+                          lon = unique(tmp.df$lon),
+                          tmax= max(tmp.df$Tair,na.rm=T) -272.15)
+}
+t.df <- do.call(rbind,t.ls)
+t.df$tmax[t.df$tmax<0] <- t.df$tmax[t.df$tmax<0] + 272.15
+
+sig.df <- merge(sig.df,t.df,all.x=T)
+
+# nrow(site.info.df[site.info.df$slope.significant == 1 &
 #                     site.info.df$p80.fit > 2,]) / nrow(site.info.df)
 # 
-# nrow(site.info.df[site.info.df$slope.significant == 1 & 
+# nrow(site.info.df[site.info.df$slope.significant == 1 &
 #                     site.info.df$p80.fit > 2 &
 #                     site.info.df$in.range==2,]) / nrow(site.info.df)
+
+# (sig.df[sig.df$in.range==2])
