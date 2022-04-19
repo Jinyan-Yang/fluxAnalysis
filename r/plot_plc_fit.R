@@ -104,7 +104,7 @@ par(mar=c(5,5,1,1),mfrow=c(3,1),cex=1)
 pch.vec <- c(1,16)
 plot(p80.fit~tmax,data = high.d.df,col=round(pft.num),pch=16,#pch.vec[in.range],
      ylim=c(2,10),
-     xlab=expression(VPD[max]~(kPa)),ylab=expression(VPD[80]~(kPa),xlim=c(32,52)))
+     xlab=expression(T[max]~(degree*C)),ylab=expression(VPD[80]~(kPa),xlim=c(32,52)))
 arrows(x0 = high.d.df$vpd.obs.max, y0 = high.d.df$p80.fit.025,
        x1 = high.d.df$vpd.obs.max, y1=high.d.df$p80.fit.975,
        length=0.01, angle=90, code=3,col=round(high.d.df$pft.num),lty='solid')
