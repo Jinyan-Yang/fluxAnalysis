@@ -1,5 +1,7 @@
 source('r/functions_plot.R')
 source('r/get_fit_info.R')
+# sig.df <- readRDS('cache/fit.slople.sig.rds')
+high.d.df <- sig.df[sig.df$p80.fit <10,]
 # make plots####
 tiff('figures/LE decline fit.tif',width = 400*2,height = 400*3*.618)
 
@@ -97,7 +99,7 @@ nrow(sig.df[sig.df$p80.fit <10,])/71
 palette(col.df$iris[c(2,4,5,1,3)])
 tiff('figures/vpd80_tmax.tif',width = 500,height = 500*3*.618)
 par(mar=c(5,5,1,1),mfrow=c(3,1),cex=1)
-high.d.df <- sig.df[sig.df$p80.fit <10,]
+
 # a
 pch.vec <- c(1,16)
 plot(p80.fit~tmax,data = high.d.df,col=round(pft.num),pch=16,#pch.vec[in.range],
@@ -131,7 +133,7 @@ df.sub <- high.d.df[high.d.df$pft.name == 'savanna' |
 plot(p80.fit~tmax,data = df.sub,
      col=round(pft.num),pch=16,#pch.vec[in.range],
      ylim=c(2,10),xlim=c(32,52),
-     xlab=expression(VPD[max]~(kPa)),ylab=expression(VPD[80]~(kPa)),cex=2)
+     xlab=expression(T[max]~(degree*C)),ylab=expression(VPD[80]~(kPa)),cex=2)
 
 lm.fit <- lm(p80.fit~tmax ,data = df.sub)
 
