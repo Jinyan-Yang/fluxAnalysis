@@ -44,7 +44,7 @@ site.info.df$pft.name[sav.index] <- 'savanna'
 site.info.df$pft.name[grass.index] <- 'grasslands'
 site.info.df$pft.name[shrub.index] <- 'shublands'
 site.info.df$pft.name[crop.index] <- 'croplands'
-site.info.df$pft.name <- factor(site.info.df$pft.name,levels = c('croplands','forests','savana','grasslands','shublands'))
+site.info.df$pft.name <- factor(site.info.df$pft.name,levels = c('croplands','forests','savanna','grasslands','shublands'))
 # get pft number
 site.info.df$pft.num <- NA
 set.seed(1935)
