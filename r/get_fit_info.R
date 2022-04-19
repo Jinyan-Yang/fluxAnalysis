@@ -80,11 +80,11 @@ sig.df <- merge(sig.df,t.df,all.x=T)
 
 saveRDS(sig.df,'cache/fit.slople.sig.rds')
 
-# nrow(site.info.df[site.info.df$slope.significant == 1 &
-#                     site.info.df$p80.fit > 2,]) / nrow(site.info.df)
-# 
-# nrow(site.info.df[site.info.df$slope.significant == 1 &
-#                     site.info.df$p80.fit > 2 &
-#                     site.info.df$in.range==2,]) / nrow(site.info.df)
+nrow(site.info.df[site.info.df$slope.significant == 1 &
+                    site.info.df$p80.fit > 2,]) / nrow(site.info.df)
 
-# (sig.df[sig.df$in.range==2])
+nrow(site.info.df[site.info.df$slope.significant == 1 &
+                    site.info.df$p80.fit > 2 &
+                    site.info.df$in.range==2,]) / nrow(site.info.df)
+
+nrow(sig.df[sig.df$p80.fit <10,])

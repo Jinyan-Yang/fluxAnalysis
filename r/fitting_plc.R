@@ -68,15 +68,21 @@ for (i in seq_along(hiD.period.ls)){
   # abline(rq(Qle~vpd_kPa,data = tmp.df,tau = 0.9), col = "black", lty = 2)
   
   # plot hist
-  hist(tmp.df$LAI[tmp.df$rained == 1],main = '',freq = F,col = t_col('navy'),xlab='LAI',border = NA,xlim=c(0,4))
-  hist(tmp.df$LAI[tmp.df$rained == 0],freq = F,add=T,border = NA,col=t_col('coral'))
-  legend('topright',legend = c('Dry','Wet'),
-         pch=15,col=c('coral','navy'),bty='n')
-  legend('topleft',legend = sprintf('(%s)','c'),bty='n')
-  # 
-  hist(tmp.df$Qle[tmp.df$rained == 1],main = '',freq = F,col = t_col('navy'),xlab=expression('Latent heat flux'~(W~m^-2)),border = NA)
-  hist(tmp.df$Qle[tmp.df$rained == 0],freq = F,add=T,col=t_col('coral'),border = NA)
-  legend('topleft',legend = sprintf('(%s)','d'),bty='n')
+  if(sum(tmp.df$LAI[tmp.df$rained == 1],na.rm=T)>0){
+    hist(tmp.df$LAI[tmp.df$rained == 1],main = '',freq = F,col = t_col('navy'),xlab='LAI',border = NA,xlim=c(0,4))
+    hist(tmp.df$LAI[tmp.df$rained == 0],freq = F,add=T,border = NA,col=t_col('coral'))
+    legend('topright',legend = c('Dry','Wet'),
+           pch=15,col=c('coral','navy'),bty='n')
+    legend('topleft',legend = sprintf('(%s)','c'),bty='n')
+    # 
+    hist(tmp.df$Qle[tmp.df$rained == 1],main = '',freq = F,col = t_col('navy'),xlab=expression('Latent heat flux'~(W~m^-2)),border = NA)
+    hist(tmp.df$Qle[tmp.df$rained == 0],freq = F,add=T,col=t_col('coral'),border = NA)
+    legend('topleft',legend = sprintf('(%s)','d'),bty='n')
+  }else{
+    plot(0,pch=NA,ann=F,axes=F)
+    plot(0,pch=NA,ann=F,axes=F)
+  }
+ 
   dev.off()
 }
 saveRDS(out.ls,'cache/fit.out.rds')

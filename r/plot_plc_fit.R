@@ -112,8 +112,8 @@ legend('topleft',legend = '(a)',bty='n')
 legend('bottomleft',legend = levels(high.d.df$pft.name),col=palette(),bty='n',horiz = F,pch=16,ncol=3)
 
 # 
-df.sub <- high.d.df[high.d.df$pft.name != 'savanna' &
-                            high.d.df$pft.name!= 'croplands',]
+df.sub <- high.d.df[high.d.df$pft.name == 'forests' |
+                            high.d.df$pft.name== 'grasslands',]
 # b
 plot(p80.fit~tmax,data = df.sub,
      col=round(pft.num),pch=16,#pch.vec[in.range],
@@ -127,6 +127,11 @@ legend('topleft',legend = '(b)',bty='n')
 
 mylabel = bquote(italic(R)^2 == .(format(summary(lm.fit)$r.squared, digits = 3)))
 text(x = 45, y = 8, labels = mylabel)
+# legend('topright',legend = c(mylabel,
+#                              paste0('n forest = ',nrow(df.sub[df.sub$pft.name=='forests',])),
+#                              paste0('n grasslands = ',nrow(df.sub[df.sub$pft.name=='grasslands',]))
+#                              ),
+#        bty='n')
 # c
 df.sub <- high.d.df[high.d.df$pft.name == 'savanna' | 
                             high.d.df$pft.name== 'croplands',]
