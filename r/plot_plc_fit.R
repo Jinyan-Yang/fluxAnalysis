@@ -12,7 +12,7 @@ plot.fit.plc.func(forest.index = forest.index,out.ls = out.ls,col.plot = col.df$
 legend('topleft',legend = c('(b) forests'),bty='n')
 
 plot.fit.plc.func(forest.index = sav.index,out.ls = out.ls,col.plot = col.df$iris[5],sig.vec = site.info.df$slope.significant)
-legend('topleft',legend = c('(c) savana'),bty='n')
+legend('topleft',legend = c('(c) savanna'),bty='n')
 
 plot.fit.plc.func(forest.index = grass.index,out.ls = out.ls,col.plot = col.df$iris[1],sig.vec = site.info.df$slope.significant)
 legend('topleft',legend = c('(d) grasslands'),bty='n')
@@ -56,7 +56,7 @@ legend('bottomleft',legend = levels(high.d.df$pft.name),col=palette(),bty='n',ho
 # df.sub <- high.d.df[high.d.df$pft.name=='grasslands' |
 #                       high.d.df$pft.name == 'forests',]
 
-df.sub <- high.d.df[high.d.df$pft.name != 'savana' &
+df.sub <- high.d.df[high.d.df$pft.name != 'savanna' &
                       high.d.df$pft.name!= 'croplands',]
 plot(p80.fit~vpd.obs.max,data = df.sub,
      col=round(pft.num),pch=16,#pch.vec[in.range],
@@ -71,7 +71,7 @@ legend('topleft',legend = '(b)',bty='n')
 mylabel = bquote(italic(R)^2 == .(format(summary(lm.fit)$r.squared, digits = 3)))
 text(x = 6.5, y = 8, labels = mylabel)
 # c
-df.sub <- high.d.df[high.d.df$pft.name == 'savana' | 
+df.sub <- high.d.df[high.d.df$pft.name == 'savanna' | 
                       high.d.df$pft.name== 'croplands',]
 plot(p80.fit~vpd.obs.max,data = df.sub,
      col=round(pft.num),pch=16,#pch.vec[in.range],
@@ -110,7 +110,7 @@ legend('topleft',legend = '(a)',bty='n')
 legend('bottomleft',legend = levels(high.d.df$pft.name),col=palette(),bty='n',horiz = F,pch=16,ncol=3)
 
 # 
-df.sub <- high.d.df[high.d.df$pft.name != 'savana' &
+df.sub <- high.d.df[high.d.df$pft.name != 'savanna' &
                             high.d.df$pft.name!= 'croplands',]
 # b
 plot(p80.fit~tmax,data = df.sub,
@@ -126,7 +126,7 @@ legend('topleft',legend = '(b)',bty='n')
 mylabel = bquote(italic(R)^2 == .(format(summary(lm.fit)$r.squared, digits = 3)))
 text(x = 45, y = 8, labels = mylabel)
 # c
-df.sub <- high.d.df[high.d.df$pft.name == 'savana' | 
+df.sub <- high.d.df[high.d.df$pft.name == 'savanna' | 
                             high.d.df$pft.name== 'croplands',]
 plot(p80.fit~tmax,data = df.sub,
      col=round(pft.num),pch=16,#pch.vec[in.range],

@@ -35,12 +35,12 @@ site.info.df <- site.info.df[site.info.df$pft != 'Permanent',]
 forest.index <- which(site.info.df$pft %in% c("MixedFor","Evergreen","Deciduous"))
 sav.index <- which(site.info.df$pft %in% c('Savannas','Savannas:','WoodySav'))
 grass.index <- which(site.info.df$pft %in% c("Grassland"))
-shrub.index <- which(site.info.df$pft %in% c('OpenShru','ClosedSh:','WoodySav','ClosedSh'))
+shrub.index <- which(site.info.df$pft %in% c('OpenShru','ClosedSh:','ClosedSh'))
 crop.index <- which(site.info.df$pft %in% c('Croplands'))
 # get name
 site.info.df$pft.name <- NA
 site.info.df$pft.name[forest.index] <- 'forests'
-site.info.df$pft.name[sav.index] <- 'savana'
+site.info.df$pft.name[sav.index] <- 'savanna'
 site.info.df$pft.name[grass.index] <- 'grasslands'
 site.info.df$pft.name[shrub.index] <- 'shublands'
 site.info.df$pft.name[crop.index] <- 'croplands'
