@@ -78,6 +78,8 @@ t.df$tmax[t.df$tmax<0] <- t.df$tmax[t.df$tmax<0] + 272.15
 
 sig.df <- merge(sig.df,t.df,all.x=T)
 
+saveRDS(sig.df,'cache/fit.slople.sig.rds')
+
 # nrow(site.info.df[site.info.df$slope.significant == 1 &
 #                     site.info.df$p80.fit > 2,]) / nrow(site.info.df)
 # 
