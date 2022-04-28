@@ -37,6 +37,12 @@ sav.index <- which(site.info.df$pft %in% c('Savannas','Savannas:','WoodySav'))
 grass.index <- which(site.info.df$pft %in% c("Grassland"))
 shrub.index <- which(site.info.df$pft %in% c('OpenShru','ClosedSh:','ClosedSh'))
 crop.index <- which(site.info.df$pft %in% c('Croplands'))
+
+length(forest.index)
+length(sav.index)
+length(grass.index)
+length(shrub.index)
+length(crop.index)
 # get name
 site.info.df$pft.name <- NA
 site.info.df$pft.name[forest.index] <- 'forests'
