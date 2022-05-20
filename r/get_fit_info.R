@@ -68,6 +68,7 @@ site.info.df$in.range[site.info.df$p80.fit>= site.info.df$vpd.obs.max] <- 1
 # 
 sig.df <- site.info.df[site.info.df$slope.significant == 1 & site.info.df$p80.fit > 2,]
 
+write.csv(site.info.df,'cache/site.info.df.csv',row.names = F)
 # get tmax
 hiD.period.ls <- readRDS('cache/processed.flx.met.data.rds')
 t.ls <- list()
